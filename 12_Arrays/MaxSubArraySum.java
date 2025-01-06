@@ -42,7 +42,7 @@ public class MaxSubArraySum {
         int cs = 0;
         for(int i=0;i<arr.length;i++){
             cs += arr[i];
-            //for corner case all numbers to be neagative we calculate our max first .  
+            //for corner case all numbers to be negative we calculate our max first .  
             max = Math.max(max, cs);
             if(cs<0){
                 cs = 0;
