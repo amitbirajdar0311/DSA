@@ -5,7 +5,7 @@ public class SearchKeyIn2DArray {
             for(int j=0;j<matrix[0].length;j++){
                 if(matrix[i][j] == value){
                     System.out.println("Value found at index : "+i+" "+j);
-                    return;
+                    return; 
                 }
 
             }
