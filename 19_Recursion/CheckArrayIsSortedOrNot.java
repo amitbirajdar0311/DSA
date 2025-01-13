@@ -10,7 +10,7 @@ public class CheckArrayIsSortedOrNot {
         System.out.println("sorted");
         return;
     }
-    public static boolean isSortedRecursssion(int[] arr, int i){
+    public static boolean isSortedRecursion(int[] arr, int i){
         //base case 
         if(i==arr.length-1){
             return true;
@@ -18,7 +18,7 @@ public class CheckArrayIsSortedOrNot {
         if(arr[i]>arr[i+1]){
             return false;
         }
-        return isSortedRecursssion(arr, i+1);
+        return isSortedRecursion(arr, i+1);
     }
     public static void main(String[] args){
         int[] arr= {2,3,4,1};
@@ -34,6 +34,6 @@ public class CheckArrayIsSortedOrNot {
         
         // isSorted(arr);
 
-        System.out.println(isSortedRecursssion(arr,0));
+        System.out.println(isSortedRecursion(arr,0));
     }
 }

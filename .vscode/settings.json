@@ -6,6 +6,8 @@
         "minsum",
         "rightboundary",
         "rightmax",
+        "serach",
+        "totalways",
         "trappedwater",
         "waterlevel"
     ]
