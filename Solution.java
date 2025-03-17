@@ -1,19 +1,16 @@
-public class Solution {
-
-  public static int power(int a, int n){
-    if(n==0){
-      return 1;
+public class Solution{
+  public static void removeDuplicates(String str){
+    String newStr = "";
+    for (int i = 0; i < str.length(); i++) {
+      // Check if the current character is not already present in newStr
+      if (newStr.indexOf(str.charAt(i)) == -1) {
+        newStr += str.charAt(i); 
+      }
     }
-    int halfPower = power(a,n/2);
-    if(n%2!=0){
-        return a * halfPower * halfPower;
-    }
-    return halfPower * halfPower;
+    System.out.println(newStr);
   }
-  public static void main(String[] args) {
-    int a = 2 ;
-    int n = 5 ;
-    int result = power(a, n);
-    System.out.println(result);
+  public static void main(String[] args){
+   String str = "appnnacollege";
+   removeDuplicates(str);
   }
 }
