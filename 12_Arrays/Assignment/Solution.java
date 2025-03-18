@@ -1,5 +1,4 @@
-
-
+// Source: https://leetcode.com/problems/contains-duplicate/
 public class Solution {
     public static boolean containsDuplicate(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
